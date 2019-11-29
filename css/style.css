@@ -295,27 +295,27 @@ html, body {
 
 .shadow{
     -webkit-text-fill-color: #fff;
-    -webkit-text-stroke: 2px #000;
-    text-shadow: 2px 3px 0px #ddd,
-    0px 2px 0px #000,
-    4px 2px 0px #000,
-    2px 0px 0px #000,
-    2px 4px 0px #000,
-    0px 4px 0px #000,
-    4px 4px 0px #000;
+    -webkit-text-stroke: 1.8px #000;
+    text-shadow: 1px 2px 0px #ddd,
+    -1px 1px 0px #000,
+    3px 1px 0px #000,
+    1px -1px 0px #000,
+    1px 3px 0px #000,
+    -1px 3px 0px #000,
+    3px 3px 0px #000;
 }
 
 .shadow-white{
     letter-spacing: 2px;
     -webkit-text-fill-color: #fff;
     -webkit-text-stroke: 2px #fff;
-    text-shadow: 3px 4px 0px #444,
-    1px 3px 0px #fff,
-    5px 3px 0px #fff,
-    3px 1px 0px #fff,
-    3px 5px 0px #fff,
-    1px 5px 0px #fff,
-    5px 5px 0px #fff;
+    text-shadow: 2px 3px 0px #444,
+    0px 2px 0px #fff,
+    4px 2px 0px #fff,
+    2px 0px 0px #fff,
+    2px 4px 0px #fff,
+    0px 4px 0px #fff,
+    4px 4px 0px #fff;
 }
 
 .index-content h1{
@@ -428,8 +428,9 @@ nav {
     width: 460px;
     right: 0;
     top: 0;
-    transition: all 800ms cubic-bezier(.8, 0, .33, 1);
-    border-radius: 0% 0% 100% 50%;
+    /* transition: all 800ms cubic-bezier(.8, 0, .33, 1); */
+    transition: 800ms;
+    /* border-radius: 0% 0% 100% 50%; */
     z-index: 3;
     
 }
@@ -457,7 +458,8 @@ nav .menu-btn .line {
     background: #fff;
     height: 4px;
     margin: 6px 0;
-    transition: all 700ms cubic-bezier(.9, 0, .33, 1);
+    /* transition: all 700ms cubic-bezier(.9, 0, .33, 1); */
+    transition: 400ms;
     border-radius: 2px;
 }
 
@@ -498,7 +500,7 @@ nav .nav-links {
     transform: translateX(100px);
     opacity: 0;
     transition: all 900ms cubic-bezier(.9, 0, .33, 1);
-    padding: 80px 30px 40px;
+    padding: 80px 10px 40px;
 }
 
 
@@ -512,183 +514,158 @@ nav .nav-links.fade-in {
 
 
 
-
-
-
-
-.lanmu_left{
-    /* background: #0006; */
-    height: 100%;
-    position: relative;
-}
-
-
-
-
-.accordion>li{
-    width: 100%;
-    text-indent: 40px;
-    position: relative;
-}
-.accordion .link{
-    display: block;
-    width: 100%;
-    font-size: 20px;
-    color: #ffffff;
-    line-height: 2.4;
-    border-bottom: #ffffff dashed 0.01rem;
-    cursor: pointer;
-}
-.accordion>li:hover .cc-title{
-    color: #99e164;
-}
-
-.submenu {
+.cd-accordion-menu {
+    
+    /* background: #4d5158; */
+    
+    
+  }
+  .cd-accordion-menu ul {
+    /* by default hide all sub menus */
     display: none;
-}
-
-
-
-.accordion>li>div>i {
+  }
+  .cd-accordion-menu li {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .cd-accordion-menu input[type=checkbox] {
+    /* hide native checkbox */
     position: absolute;
-    top: 16px;
-    left: 16px;
-
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    opacity: 0;
+  }
+  .cd-accordion-menu label, .cd-accordion-menu a {
+    position: relative;
+    display: block;
+    padding: 10px 18px 10px 64px;
+    /* background: #4d5158;
+    box-shadow: inset 0 -1px #555960; */
+    color: #ffffff;
+    font-size: 16px;
+  }
+  .no-touch .cd-accordion-menu label:hover, .no-touch .cd-accordion-menu a:hover {
+    background: #52565d;
+  }
+  .cd-accordion-menu label::before, .cd-accordion-menu label::after, .cd-accordion-menu a::after {
+    /* icons */
+    content: '';
+    display: inline-block;
     width: 16px;
     height: 16px;
-    background: url("../images/jia.png")no-repeat;
-    background-size: 100% 100%;
-}
-
-
-
-
-.accordion>li>div>i.fa-chevron-down {
-    
-    left: 0;
-}
-
-/* .accordion>li.open .link {
-    color: #ffffff;
-} */
-
-/* .accordion>li.open i {
-    color: #ffffff;
-} */
-
-.accordion>li.open>div>i.fa-chevron-down {
-    background: url("../images/jian.png")no-repeat;
-    background-size: 100% 100%;
-}
-
-.submenu{}
-.submenu li{
-    border-bottom: #ffffff dashed 0.01rem;
-}
-.submenu>li>a{
-    display: block;
-    width: 100%;
-    height: 0.6rem;
-    font-size: 16px;
-    color: #cfcfcf;
-    line-height: 0.6rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.accordion01{
-    margin-left: 40px;
-}
-
-.accordion01>li{
-    width: 100%;
-    text-indent: 40px;
-    position: relative;
-}
-.accordion01 .link01{
-    display: block;
-    width: 100%;
-    font-size: 20px;
-    color: #ccc;
-    line-height: 2.4;
-    border-bottom: #ffffff dashed 0.01rem;
-    cursor: pointer;
-}
-.accordion01>li:hover .cc-title{
-    color: #99e164;
-}
-
-.submenu01 {
-    display: none;
-}
-
-
-
-.accordion01 li i {
     position: absolute;
-    top: 16px;
-    left: 16px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .cd-accordion-menu label {
+    cursor: pointer;
+  }
+  .cd-accordion-menu label::before{
+    background-image: url(../img/cd-icons.svg);
+    background-repeat: no-repeat;
+  }
+  /* .cd-accordion-menu label::before, .cd-accordion-menu label::after {
+    background-image: url(../img/cd-icons.svg);
+    background-repeat: no-repeat;
+  } */
+  .cd-accordion-menu label::before {
+    /* arrow icon */
+    left: 18px;
+    background-position: 0 0;
+    -webkit-transform: translateY(-50%) rotate(-90deg);
+    -moz-transform: translateY(-50%) rotate(-90deg);
+    -ms-transform: translateY(-50%) rotate(-90deg);
+    -o-transform: translateY(-50%) rotate(-90deg);
+    transform: translateY(-50%) rotate(-90deg);
+    transition: 400ms;
+  }
 
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    width: 16px;
-    height: 16px;
-    background: url("../images/jia.png")no-repeat;
-    background-size: 100% 100%;
-}
-
-
-
-
-.accordion01 li i.fa-chevron-down {
+  /* folder icons */
+  /* .cd-accordion-menu label::after {
     
-    left: 0;
-}
+    left: 41px;
+    background-position: -16px 0;
+  } */
 
-/* .accordion01 li.open01 .link01 {
-    color: #ffffff;
-}
+  /* image icon */
+  /* .cd-accordion-menu a::after {
+    
+    left: 36px;
+    background: url(../img/cd-icons.svg) no-repeat -48px 0;
+  } */
+  .cd-accordion-menu input[type=checkbox]:checked + label::before {
+    /* rotate arrow */
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .cd-accordion-menu input[type=checkbox]:checked + label::after {
+    /* show open folder icon if item is checked */
+    background-position: -32px 0;
+  }
 
-.accordion01 li.open01 i {
-    color: #ffffff;
-} */
-
-.accordion01 li.open01 i.fa-chevron-down {
-    background: url("../images/jian.png")no-repeat;
-    background-size: 100% 100%;
-}
-
-.submenu01{
-    padding-left: 30px;
-}
-.submenu01 li{
-    border-bottom: #ffffff dashed 0.01rem;
-}
-.submenu01 a{
+  /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
+    /* show children when item is checked */
+  .cd-accordion-menu input[type=checkbox]:checked + label + ul,
+  .cd-accordion-menu input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+    
     display: block;
-    width: 100%;
-    
-    font-size: 16px;
-    color: #999;
-    line-height: 2.4;
-}
-
+  }
+  .cd-accordion-menu ul label,
+  .cd-accordion-menu ul a {
+    /* background: #35383d;
+    box-shadow: inset 0 -1px #41444a; */
+    padding-left: 82px;
+  }
+  .no-touch .cd-accordion-menu ul label:hover, .no-touch
+  .cd-accordion-menu ul a:hover {
+    background: #3c3f45;
+  }
+  .cd-accordion-menu > li:last-of-type > label,
+  .cd-accordion-menu > li:last-of-type > a,
+  .cd-accordion-menu > li > ul > li:last-of-type label,
+  .cd-accordion-menu > li > ul > li:last-of-type a {
+    box-shadow: none;
+  }
+  .cd-accordion-menu ul label::before {
+    left: 36px;
+  }
+  .cd-accordion-menu ul label::after,
+  .cd-accordion-menu ul a::after {
+    left: 59px;
+  }
+  .cd-accordion-menu ul ul label,
+  .cd-accordion-menu ul ul a {
+    padding-left: 100px;
+  }
+  .cd-accordion-menu ul ul label::before {
+    left: 54px;
+  }
+  .cd-accordion-menu ul ul label::after,
+  .cd-accordion-menu ul ul a::after {
+    left: 77px;
+  }
+  .cd-accordion-menu ul ul ul label,
+  .cd-accordion-menu ul ul ul a {
+    padding-left: 118px;
+  }
+  .cd-accordion-menu ul ul ul label::before {
+    left: 72px;
+  }
+  .cd-accordion-menu ul ul ul label::after,
+  .cd-accordion-menu ul ul ul a::after {
+    left: 95px;
+  }
+  
+/* .has-children label{
+    color: red;
+} */
 
 
 
