@@ -59,26 +59,22 @@ html, body {
     
 }
 .logo img{
-    height: 42px;
-    
-    
+    height: 42px; 
 }
 
 .nav{
     /* border: 1px solid red; */
     display: flex;
     /* margin: 0 auto; */
+    
 
 }
 .nav li{
-    
     margin: 40px;
     
-    
-
 }
 .nav li a{
-    font-size: 18px;
+    font-size: 22px;
     color: #fff;
     transition: .3s;
 
@@ -99,6 +95,7 @@ html, body {
     /* line-height: 40px; */
     padding: 11px 22px;
     margin-left: auto;
+    margin-right: 100px;
 
 }
 
@@ -321,13 +318,7 @@ html, body {
 .index-content h1{
     font-size: 50px;
     font-weight: 800;
-    /* color: #fff; */
-    /* color: transparent; */
     
-    /*文字的填充色*/
-    /* text-shadow: 2px 2px 1px #000; */
-
-    /* text-shadow: 1px 1px 0px lightgray,2px 2px 0px #000; */
 }
 
 .h1-line::after{
@@ -421,17 +412,18 @@ html, body {
 
 
 nav {
-    overflow: hidden;
+    /* overflow: hidden; */
     position: fixed;
-    transform: translateX(300px);
+    transform: translateX(100%);
     height: 100%;
-    width: 460px;
+    width: 600px;
     right: 0;
     top: 0;
     /* transition: all 800ms cubic-bezier(.8, 0, .33, 1); */
     transition: 800ms;
     /* border-radius: 0% 0% 100% 50%; */
     z-index: 3;
+    
     
 }
 
@@ -444,12 +436,13 @@ nav.nav-open {
 
 nav .menu-btn {
     position: absolute;
-    top: 4%;
-    left: 20%;
+    top: 32px;
+    left: -160px;
     padding: 0;
     width: 30px;
     cursor: pointer;
     z-index: 2;
+    transition: 800ms cubic-bezier(.5, 1, 0, 1);
 }
 
 nav .menu-btn .line {
@@ -466,7 +459,11 @@ nav .menu-btn .line {
 nav .menu-btn .line.line--1 {
     transform: rotate(0) translateY(0);
 }
-
+nav.nav-open .menu-btn {
+    transition: 400ms;
+    left: 60px;
+    
+}
 nav .menu-btn .line.line--1.line-cross {
     transform: rotate(45deg) translateY(14px);
 
@@ -538,11 +535,11 @@ nav .nav-links.fade-in {
   .cd-accordion-menu label, .cd-accordion-menu a {
     position: relative;
     display: block;
-    padding: 10px 18px 10px 64px;
+    padding: 14px 18px 14px 64px;
     /* background: #4d5158;
     box-shadow: inset 0 -1px #555960; */
     color: #ffffff;
-    font-size: 16px;
+    font-size: 20px;
   }
   .no-touch .cd-accordion-menu label:hover, .no-touch .cd-accordion-menu a:hover {
     background: #52565d;
