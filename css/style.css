@@ -315,6 +315,7 @@ html, body {
     2px 4px 0px #fff,
     0px 4px 0px #fff,
     4px 4px 0px #fff;
+    font-weight: 400 !important;
 }
 
 .index-content h1{
