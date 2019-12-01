@@ -361,7 +361,7 @@ html, body {
     background-color: rgba(0,0,0,.6);
     border-radius: 5px;
     margin-top: 40px;
-    right: 6px;
+    
 
 
 }
@@ -371,6 +371,7 @@ html, body {
     height: 34px;
     position: absolute;
     top: 5px;
+    right: 6px;
 }
 
 
