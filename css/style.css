@@ -236,6 +236,7 @@ html, body {
     opacity: 0;
     transition: 1.4s;
     position: relative;
+    padding-right: 44px;
 
 }
 
@@ -250,6 +251,7 @@ html, body {
     position: relative;
     top: 0;
     transition: 1.4s;
+    
     
 }
 
@@ -364,10 +366,10 @@ html, body {
 }
 .learn-more img{
     display: inline-block;
-    margin-left: 14px;
-    height: 16px;
-    position: relative;
-    top: 1px;
+    margin-left: 4px;
+    height: 34px;
+    position: absolute;
+    top: 5px;
 }
 
 
