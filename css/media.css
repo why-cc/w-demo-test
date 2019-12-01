@@ -301,6 +301,31 @@
         left: -.8rem;
         
     }
+    
+    .shadow{
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: .018rem #000;
+    text-shadow: .01rem .02rem 0px #ddd,
+    -.01rem .01rem 0px #000,
+    .03rem .01rem 0px #000,
+    .01rem -.01rem 0px #000,
+    .01rem .03rem 0px #000,
+    -.01rem .03rem 0px #000,
+    .03remx .03rem 0px #000;
+}
+
+.shadow-white{
+    letter-spacing: .02rem;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: .02rem #fff;
+    text-shadow: .02rem .03rem 0px #444,
+    0px .02rem 0px #fff,
+    .04rem .02rem 0px #fff,
+    .02remx 0px 0px #fff,
+    .02rem .04rem 0px #fff,
+    0px .04rem 0px #fff,
+    .04rem .04rem 0px #fff;
+}
 }
 
 @media only screen and (max-width: 768px){
