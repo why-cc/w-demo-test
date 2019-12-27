@@ -311,7 +311,7 @@
         /* font-size: .26rem; */
     }
     .shadow-white{
-        font-weight: 200;
+/*         font-weight: 200; */
     }
     .h1-line::after{
         width: 2.4rem;
