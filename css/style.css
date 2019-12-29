@@ -539,6 +539,7 @@ nav {
     transition: 800ms;
     /* border-radius: 0% 0% 100% 50%; */
     z-index: 3;
+    /* overflow: auto; */
     
     
 }
@@ -613,7 +614,11 @@ nav .nav-links {
     transform: translateX(100px);
     opacity: 0;
     transition: all 900ms cubic-bezier(.9, 0, .33, 1);
-    padding: 80px 10px 40px;
+    padding: 0 10px 180px;
+    /* border: 1px solid red; */
+    margin-top: 80px;
+    /* margin-bottom: 80px; */
+    overflow: auto;
 }
 
 
