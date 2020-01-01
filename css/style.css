@@ -621,6 +621,10 @@ nav .nav-links {
     overflow: auto;
 }
 
+nav .nav-links::-webkit-scrollbar{  
+     display:none    
+}
+
 
 nav .nav-links.fade-in {
     opacity: 1;
